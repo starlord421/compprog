@@ -11,10 +11,11 @@ dictionary = {
     }
 
 def is_an_even_number(number) :
-        if int input = (number % 2 == 0):
-        print ('this is an even number!')
+        if   (number % 2 == 0):
+        
+            print ('this is an even number!')
         else: 
-        print("this is an odd number :(") 
+            print("this is an odd number :(") 
         is_an_even_number(11)   
 
 # Main_CHARACTER = "mario"
