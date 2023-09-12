@@ -15,6 +15,8 @@ multiply=1*3
 print (multiply)
 modulo = 2/1
 
+print (modulo)
+
 exponent = 2**3
 
 print(modulo)
