@@ -30,3 +30,13 @@ if attendence >= 75: print ('you are free to take the exam')
 else: print ('then get out of here')
 
 if attendence > 100: print ('nice try fool, get the frick out of here.')
+
+age_input = int(input('what is the first age'))
+age_input2 = int(input('what is the second age'))
+age_input3 = int(input('what is the third age'))
+
+if age_input > age_input2 and age_input3: print (f'the first dude is a boomer at {age_input} years old')
+
+if age_input3 > age_input2 and age_input: print (f'the third dude is a boomer at {age_input3} years old')
+
+if age_input2 > age_input and age_input3: print (f'the second dude is a boomer at {age_input2} years old')
