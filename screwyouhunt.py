@@ -67,13 +67,13 @@ for i in morse:
     if i == 't':
         print (t)
     if i == 'u':
-        print (a)
+        print (u)
     if i == 'v':
         print (v)
     if i == 'w':
         print (w)
     if i == 'x':
-        print (a)
+        print (x)
     if i == 'y':
         print (y)
     if i == 'z':
