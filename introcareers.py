@@ -25,8 +25,8 @@ comp_prog_team={
     "task":["managing","mediator",""]
     },
 }
-print(f"thanks {name} for attending, can i recap what we whent over")
-print("we have five job openings, which field do you want, analyst, senior developer, junior developer, product manager, or team leader")
+
+print(f"we have five job openings, which field do you want, analyst, senior developer, junior developer, product manager, or team leader")
 if input== "analyst":
     print(f"how many years of experiance do you have")
     for i in range (0,8):
