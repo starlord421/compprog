@@ -1,7 +1,7 @@
 print("welcome to hangman")
 word="nerd"
 guessed_letters=[]
-guesses=1
+guesses=6
 def desplay_clue(word, guessed_letters):
     clue=""
     for letter in word:
@@ -9,8 +9,7 @@ def desplay_clue(word, guessed_letters):
             clue += letter
             print(clue)
         else: 
-            print("____ ")
-               
+            print("__ ")               
 while True:
     desplay_clue(word,guessed_letters)
     guess=input("what is your guessed letter ").upper()
@@ -21,3 +20,14 @@ while True:
     if all (letter.lower() in guessed_letters or letter.upper() in guessed_letters for letter in word):
         print("if you got this far, you are one")
         break
+
+    guesses -= 1
+
+    if guesses == 0:
+        print("You've failed.")
+        again = input("Would you like to try again? y/n ")
+        if again == 'y':
+            guesses = 6
+        else:
+            print("Goodbye.")
+            exit()
