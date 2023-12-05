@@ -1,4 +1,3 @@
-
 user_name =input ('what is your name?')
 user_age= int(input ('how old are you?'))
 user_gender= input ('whats your gender')
