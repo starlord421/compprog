@@ -6,6 +6,7 @@ rusty_knife=-25
 knife= -20
 bandage=20
 gun=-100
+shotgun=-250
 user_inventory= ["knife", "bandage"]
 user_health=100
 weak_thug=50
@@ -28,7 +29,28 @@ while True:
                if fight_input == "fight":
                     print("you use your knife and slash the orphan, she runs away and drops a rusty knife")
                     user_inventory.append("rusty knife")
-               elif fight_input == "run":
-                    ally=print(f"the orphan looks at you confused and apoligizes, she then askes if she can be your ally, do you want to aprove or disaprove")
+               if fight_input == "run":
+                    ally=input(f"the orphan looks at you confused and apoligizes, she then askes if she can be your ally, do you want to aprove or disaprove")
                     if ally == "y":
                          print("you agree and the orphan looks at you with utmost respect and loyalty.")
+                         user_inventory.append("rusty knife")
+                    if i < 9 and i >= 6 :
+                     fight_input = input(f"you hear some one yell after you, he has {thug} hp and wants to rob you, do you want to fight or run")
+                    if fight_input == "fight":
+                      print(thug+knife+rusty_knife)
+                    ally=input(f"the thug looks at you standing over him, he begs you to spare him, do you want to aprove or disaprove")
+                    if ally == "y":
+                         print("you agree and the thug looks at you with a grudging admeration, for he now owes you his life.")
+                    user_inventory.append("gun")
+                    if fight_input == "run":
+                         print("the thug decides not to chase you")
+                         user_inventory.append("gun")
+                         if i < 9 and i >= 6 :
+                              fight_input = input(f"you hear a sound like a foghorn bellow after you, he has {brute_thug} hp and wants to beat you tf up, do you want to fight or run")
+                    if fight_input == "fight":
+                      print(brute_thug+knife+rusty_knife+gun)
+                    print ("you use your knife and slash the thug, your orphaned friend followes up with a quick stab, your thug ally then shots him. the brute falls over dead")
+                    user_inventory.append("shotgun")
+                    print("you and your allies realize that you work really well together and your conquest of hells kitchen begins")
+                    if fight_input == "run":
+                         print("the thug decides not to chase you")
